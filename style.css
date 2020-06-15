@@ -1,0 +1,1135 @@
+@charset "UTF-8";
+/*! destyle.css v1.0.11 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model
+   ========================================================================== */
+* {
+  box-sizing: border-box; }
+
+::before,
+::after {
+  box-sizing: inherit; }
+
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-tap-highlight-color: transparent;
+  /* 3*/ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/* Vertical rhythm
+   ========================================================================== */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0; }
+
+/* Headings
+   ========================================================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  margin: 0; }
+
+/* Lists (enumeration)
+   ========================================================================== */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* Lists (definition)
+   ========================================================================== */
+dt {
+  font-weight: bold; }
+
+dd {
+  margin-left: 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+  border: 0;
+  border-top: 1px solid;
+  margin: 0;
+  clear: both;
+  color: inherit; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */ }
+
+address {
+  font-style: inherit; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+  vertical-align: bottom; }
+
+embed,
+object,
+iframe {
+  border: 0;
+  vertical-align: bottom; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Reset form fields to make them styleable
+ * 1. Reset radio and checkbox to preserve their look in iOS.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border-radius: 0;
+  text-align: inherit; }
+
+[type='checkbox'] {
+  /* 1 */
+  -webkit-appearance: checkbox;
+  appearance: checkbox; }
+
+[type='radio'] {
+  /* 1 */
+  -webkit-appearance: radio;
+  appearance: radio; }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none; }
+
+button[disabled],
+[type='button'][disabled],
+[type='reset'][disabled],
+[type='submit'][disabled] {
+  cursor: default; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Remove the padding in IE 10.
+ */
+[type='checkbox'],
+[type='radio'] {
+  padding: 0;
+  /* 1 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+[type='search'] {
+  outline-offset: -2px;
+  /* 1 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer; }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Table
+   ========================================================================== */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption {
+  text-align: left; }
+
+td,
+th {
+  vertical-align: top; }
+
+th {
+  text-align: left;
+  font-weight: bold; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+a {
+  text-decoration: none; }
+
+/********************************
+  共通
+*********************************/
+body {
+  background-image: url(img/bkgimg3.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover; }
+
+.mypage_header {
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.4); }
+  .mypage_header img {
+    height: 1.5rem; }
+
+#staff_kanri_header {
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px; }
+  #staff_kanri_header img {
+    height: 1rem; }
+
+.mypage_footer {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: lightgray;
+  text-align: center;
+  width: 100%;
+  font-size: .6rem;
+  height: 1rem;
+  padding: 2px 0;
+  margin-top: 2rem; }
+
+.main_area {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto; }
+
+/********************************
+  login
+*********************************/
+#login {
+  text-align: center;
+  margin-top: 30px; }
+  #login p {
+    color: white; }
+  #login input {
+    border: white 1px solid;
+    text-align: right;
+    line-height: 1.5rem;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 10px auto; }
+  #login .login_button_wrap input.submit_btn {
+    text-align: center;
+    background-color: white;
+    color: darkslateblue;
+    margin: 20px auto;
+    border-radius: 5px;
+    line-height: 1.8rem;
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: darkslateblue solid 3px;
+    font-weight: bold; }
+  #login .login_button_wrap a {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+    color: darkslateblue;
+    margin: 20px auto;
+    border-radius: 5px;
+    line-height: 1.8rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: darkslateblue solid 3px; }
+
+/********************************
+  first_login
+*********************************/
+#first_login, #first_login_check {
+  margin: 20px auto;
+  color: white;
+  padding: 0 3%;
+  text-align: center; }
+  #first_login input, #first_login_check input {
+    border: white 1px solid;
+    text-align: right;
+    line-height: 1.5rem;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 10px auto;
+    color: darkslateblue; }
+  #first_login input.submit_btn, #first_login_check input.submit_btn {
+    display: block;
+    text-align: center;
+    background-color: white;
+    color: darkslateblue;
+    margin: 20px auto;
+    border-radius: 5px;
+    line-height: 1.8rem;
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: darkslateblue solid 3px;
+    font-weight: bold; }
+
+#info_wrap {
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0 auto 20px;
+  color: firebrick;
+  text-align: center;
+  line-height: 1.5rem; }
+
+p#korede_txt {
+  margin: 10px auto 30px; }
+
+#first_login_done {
+  text-align: center;
+  color: white; }
+  #first_login_done p {
+    margin: 20px auto; }
+  #first_login_done a {
+    background-color: white;
+    color: darkslateblue;
+    line-height: 1.5rem;
+    padding: 0 10px;
+    line-height: 1.8rem;
+    border-radius: 3px; }
+
+/********************************
+  mypage
+*********************************/
+.name_area {
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+  color: white; }
+  .name_area #client_name {
+    font-size: 2rem; }
+
+.status_area {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around; }
+  .status_area #status_text {
+    width: 40%;
+    align-self: center;
+    color: white;
+    padding-left: 10px; }
+  .status_area #status_icon {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+    line-height: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 15px; }
+    .status_area #status_icon .status_icon_set {
+      display: flex;
+      flex-direction: column; }
+      .status_area #status_icon .status_icon_set p.status_icon_contents {
+        font-size: .7rem;
+        line-height: 1rem;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.4);
+        padding: 2px 6px;
+        text-align: center;
+        margin: 1px; }
+      .status_area #status_icon .status_icon_set p.status_icon_contents_highlight {
+        font-size: .7rem;
+        line-height: 1rem;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.9);
+        font-weight: bold;
+        padding: 2px 6px;
+        text-align: center;
+        color: goldenrod;
+        margin: 1px; }
+
+.weight_area {
+  margin: 20px auto;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+  padding: 6px 0;
+  color: white; }
+  .weight_area #target_weight {
+    margin-right: 20px; }
+
+.contents_area {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  color: white; }
+  .contents_area .contents_wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 5px 0;
+    border-radius: 10px;
+    padding: 1%; }
+    .contents_area .contents_wrap .contents_img {
+      width: 20%;
+      align-self: center;
+      text-align: center;
+      padding: 3px; }
+      .contents_area .contents_wrap .contents_img img {
+        width: 70px; }
+    .contents_area .contents_wrap .contents_text {
+      width: 70%;
+      margin: 3px 5px 0;
+      padding: 5px; }
+      .contents_area .contents_wrap .contents_text .contents_title {
+        font-weight: bold;
+        margin-bottom: 7px; }
+      .contents_area .contents_wrap .contents_text .contents_sentens {
+        font-size: .8rem; }
+    .contents_area .contents_wrap .click_area {
+      width: 10%;
+      font-size: 2rem;
+      align-self: center;
+      text-align: center; }
+      .contents_area .contents_wrap .click_area #blue {
+        color: blue; }
+      .contents_area .contents_wrap .click_area #green {
+        color: lawngreen; }
+      .contents_area .contents_wrap .click_area #red {
+        color: deeppink; }
+      .contents_area .contents_wrap .click_area #yellow {
+        color: gold; }
+
+/********************************
+  training_timetable
+*********************************/
+#training_timetable_top {
+  margin: 10px auto 20px;
+  text-align: center; }
+
+#err_msg {
+  display: block;
+  text-align: center; }
+
+.training_wrap {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 95%;
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 10px; }
+  .training_wrap .training_link {
+    display: block;
+    background-color: lightsalmon;
+    width: 50%;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px auto 0;
+    line-height: 2rem; }
+  .training_wrap .training_datetime {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 5px; }
+  .training_wrap .training_name {
+    margin-bottom: 5px;
+    font-weight: bold; }
+  .training_wrap .trainer {
+    font-size: .9rem;
+    margin-bottom: .2rem; }
+  .training_wrap .training_discription {
+    font-size: .9rem; }
+
+.training_wrap:not(:last-child) {
+  margin-bottom: 10px; }
+
+/********************************
+  training_discription
+*********************************/
+#discription_wrap {
+  width: 90%;
+  margin: 0 auto;
+  color: white; }
+  #discription_wrap #training_datetime {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 5px; }
+  #discription_wrap #training_name {
+    margin-bottom: 5px;
+    font-weight: bold; }
+  #discription_wrap #trainer {
+    font-size: .9rem;
+    margin-bottom: .2rem; }
+  #discription_wrap #training_discription {
+    font-size: .9rem;
+    margin-bottom: 1rem; }
+  #discription_wrap #zoom_start {
+    display: block;
+    padding: 3px 10px;
+    width: 150px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: .7rem;
+    border: 1px solid white;
+    color: darkslateblue;
+    background-color: white;
+    line-height: 1.5rem;
+    border-radius: 8px; }
+
+/********************************
+  training_log
+*********************************/
+.traininglog_main {
+  color: white; }
+  .traininglog_main #traininglog_main_title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold; }
+
+.training_quantity_wrap {
+  width: 70%;
+  margin: 0 auto;
+  margin: 40px auto 40px;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 5px 20px;
+  border-radius: 10px; }
+  .training_quantity_wrap .quantity_contents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    line-height: 2.5rem; }
+
+#training_graph_area {
+  width: 80%;
+  margin: 0 auto; }
+  #training_graph_area p#training_graph_area_title {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.2rem; }
+  #training_graph_area #training_graph {
+    width: 100%;
+    text-align: center; }
+
+/********************************
+  body_tissue
+*********************************/
+.bodytissue_main {
+  color: white; }
+
+#graph_wrap {
+  width: 95%;
+  margin: 0 auto; }
+  #graph_wrap .weight_log_wrap_title {
+    font-weight: bold;
+    font-size: 1.3rem; }
+  #graph_wrap > img {
+    width: 100%; }
+
+.weight_log_wrap {
+  width: 95%;
+  margin: 0 auto; }
+  .weight_log_wrap #graph_select_icon_wrap {
+    width: 95%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center; }
+    .weight_log_wrap #graph_select_icon_wrap a {
+      display: inline-block;
+      border: white 2px solid;
+      padding: 4px;
+      border-radius: 5px; }
+    .weight_log_wrap #graph_select_icon_wrap a#current {
+      background-color: white;
+      color: darkslateblue;
+      font-weight: bold;
+      line-height: 1.5rem; }
+  .weight_log_wrap .weight_log_fillout_area {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin: 20px 4px 4px;
+    padding: 10px auto; }
+    .weight_log_wrap .weight_log_fillout_area form {
+      text-align: center; }
+      .weight_log_wrap .weight_log_fillout_area form > div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap; }
+    .weight_log_wrap .weight_log_fillout_area input {
+      border-bottom: white 1px solid;
+      height: 1.5rem;
+      margin: 5px; }
+    .weight_log_wrap .weight_log_fillout_area input#input_date {
+      width: 60%; }
+    .weight_log_wrap .weight_log_fillout_area input#input_value {
+      width: 40%; }
+    .weight_log_wrap .weight_log_fillout_area input.submit {
+      background-color: white;
+      border-radius: 10px;
+      color: darkslateblue;
+      font-weight: bold;
+      width: 30%;
+      height: 2rem;
+      text-align: center;
+      margin: 10px auto; }
+
+/********************************
+  weight_add_check
+*********************************/
+#weight_add_check {
+  color: white;
+  text-align: center; }
+  #weight_add_check form > div {
+    margin: 10px auto; }
+  #weight_add_check > p {
+    margin-top: 30px; }
+  #weight_add_check .weight_add_btn {
+    background-color: white;
+    border-radius: 10px;
+    color: darkslateblue;
+    font-weight: bold;
+    width: 100px;
+    height: 1.5rem;
+    text-align: center;
+    margin: 10px; }
+
+/********************************
+  weight_add_done
+*********************************/
+#weight_add_done {
+  color: white;
+  text-align: center; }
+  #weight_add_done > p {
+    text-align: center;
+    margin-top: 30px; }
+  #weight_add_done #weight_add_donetohome {
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+    color: darkslateblue;
+    font-weight: bold;
+    width: 100px;
+    line-height: 1.5rem;
+    margin: 10px auto; }
+
+/********************************
+  setting
+*********************************/
+#client_status_wrap {
+  width: 70%;
+  margin: 0 auto 20px;
+  color: white; }
+  #client_status_wrap #client_status_title {
+    text-align: center;
+    margin: 30px auto 20px;
+    font-weight: bold;
+    font-size: 1.4rem; }
+  #client_status_wrap .status_content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-bottom: white 1px solid;
+    margin-bottom: 15px;
+    padding: 0 10px; }
+    #client_status_wrap .status_content p.status_title {
+      margin-right: 5px; }
+
+a#client_status_btn {
+  display: block;
+  width: 100px;
+  line-height: 2rem;
+  background-color: white;
+  color: darkslateblue;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px auto;
+  border-radius: 10px; }
+
+/********************************
+  setting_edit
+*********************************/
+.status_content_edit {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: 15px;
+  padding: 0 10px; }
+  .status_content_edit p.status_title {
+    margin-right: 5px; }
+  .status_content_edit input {
+    border: white 1px solid;
+    text-align: right;
+    line-height: 1.5rem;
+    width: 200px; }
+
+input#client_status_submit_btn {
+  display: block;
+  width: 100px;
+  line-height: 2rem;
+  background-color: white;
+  color: darkslateblue;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px auto;
+  border-radius: 10px; }
+
+/********************************
+  setting_edit_done
+*********************************/
+p#client_status_info {
+  color: white;
+  text-align: center;
+  margin: 30px auto 20px;
+  font-weight: bold;
+  font-size: 1rem; }
+
+/********************************
+  staff_kanri
+*********************************/
+#staff_kanri_main .kanri_main_btn {
+  display: block;
+  width: 90%;
+  max-width: 400px;
+  line-height: 4rem;
+  background-color: white;
+  color: darkslateblue;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px auto;
+  border-radius: 10px; }
+
+/********************************
+  client_top
+*********************************/
+#client_top {
+  color: white;
+  width: 90%;
+  margin: 10px auto;
+  text-align: center; }
+  #client_top input {
+    border: white 1px solid;
+    text-align: right;
+    line-height: 1.5rem;
+    width: 100px;
+    margin-left: 5px; }
+  #client_top input#submit_btn {
+    display: block;
+    width: 100px;
+    line-height: 2rem;
+    background-color: white;
+    color: darkslateblue;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 10px; }
+
+#client_all_disp {
+  color: white;
+  width: 400px;
+  margin: 0 auto; }
+  #client_all_disp .client_card {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    line-height: 2rem;
+    padding-left: 10px;
+    margin: 10px auto; }
+    #client_all_disp .client_card input.client_all_submit_btn {
+      background-color: white;
+      color: darkslateblue;
+      padding: 0 10px;
+      margin: 5px auto;
+      border-radius: 5px;
+      line-height: 1.5rem; }
+
+/********************************
+  client_disp
+*********************************/
+#client_disp_btn_wrap {
+  text-align: center; }
+  #client_disp_btn_wrap .client_status_submit_btn {
+    display: inline-block;
+    line-height: 2rem;
+    background-color: white;
+    color: darkslateblue;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 0 20px; }
+
+/********************************
+  training_top
+*********************************/
+#training_top {
+  color: white; }
+  #training_top > a {
+    display: block;
+    width: 250px;
+    line-height: 2rem;
+    text-align: center;
+    background-color: white;
+    color: darkslateblue;
+    margin: 15px auto;
+    border-radius: 5px;
+    font-weight: bold;
+    border: rgba(255, 255, 255, 0.4) solid 2px; }
+  #training_top .training_info_wrap {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: rgba(255, 255, 255, 0.4) solid 2px;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 10px; }
+    #training_top .training_info_wrap > p {
+      line-height: 1.5rem; }
+    #training_top .training_info_wrap .training_info_btn_wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end; }
+      #training_top .training_info_wrap .training_info_btn_wrap > a {
+        margin: 1rem 10px 5px;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.3);
+        border: rgba(255, 255, 255, 0.4) solid 2px;
+        border-radius: 5px;
+        padding: 5px 10px; }
+
+/********************************
+  training_add
+*********************************/
+#training_add {
+  margin: 20px auto;
+  color: white;
+  text-align: center; }
+  #training_add input {
+    border: rgba(255, 255, 255, 0.3) solid 2px;
+    background-color: rgba(0, 0, 0, 0.3);
+    line-height: 1.7rem;
+    margin-bottom: 10px; }
+  #training_add input#submit_btn {
+    display: block;
+    margin: 1rem auto 5px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: rgba(255, 255, 255, 0.4) solid 2px;
+    border-radius: 5px;
+    padding: 3px 10px; }
+
+/********************************
+  training_add_check
+*********************************/
+#training_add_check {
+  color: white; }
+  #training_add_check .training_info_wrap {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: rgba(255, 255, 255, 0.4) solid 2px;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 10px; }
+    #training_add_check .training_info_wrap > p {
+      line-height: 1.5rem; }
+  #training_add_check #kakunin_txt {
+    text-align: center;
+    margin: 20px auto 10px; }
+  #training_add_check .submit_btn_wrap {
+    display: flex;
+    flex-direction: row; }
+    #training_add_check .submit_btn_wrap .submit_btn {
+      display: block;
+      line-height: 2rem;
+      background-color: white;
+      color: darkslateblue;
+      font-weight: bold;
+      text-align: center;
+      margin: 10px auto;
+      border-radius: 10px;
+      padding: 0 20px; }
+
+/********************************
+  training_add_done
+*********************************/
+#training_add_done {
+  color: white;
+  text-align: center; }
+  #training_add_done > p {
+    line-height: 3rem; }
+  #training_add_done > a {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: rgba(255, 255, 255, 0.4) solid 2px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 10px auto;
+    width: 400px; }
+
+/*# sourceMappingURL=style.css.map */

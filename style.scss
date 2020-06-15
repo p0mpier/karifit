@@ -1,0 +1,956 @@
+@charset "utf-8";
+@import "./scss/reset.scss";
+
+/********************************
+  共通
+*********************************/
+
+body {
+    background-image: url(img/bkgimg3.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.mypage_header {
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.4);
+    
+    img {
+        height: 1.5rem;
+    }
+}
+
+#staff_kanri_header {
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.4);
+    margin-bottom: 10px;
+    
+    img {
+        height: 1rem;
+    }
+}
+
+.mypage_footer {
+    background-color: rgba(0,0,0,0.4);
+    color: lightgray;
+    text-align: center;
+    width: 100%;
+    font-size: .6rem;
+    height: 1rem;
+    padding: 2px 0;
+    margin-top: 2rem;
+}
+
+.main_area {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/********************************
+  login
+*********************************/
+#login {
+    text-align: center;
+    margin-top: 30px;
+    
+    p {
+        color: white;
+    }
+    
+    input {
+        border: white 1px solid;
+        text-align: right;
+        line-height: 1.5rem;
+        width: 200px;
+        background-color: rgba(255,255,255,0.4);
+        margin: 10px auto;
+    }
+    
+    .login_button_wrap {
+        
+        input.submit_btn {
+            text-align: center;
+            background-color: white;
+            color: darkslateblue;
+            margin: 20px auto;
+            border-radius: 5px;
+            line-height: 1.8rem;
+            width: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            border: darkslateblue solid 3px;
+            font-weight: bold;
+        }
+        
+        a {
+            display: inline-block;
+            text-align: center;
+            font-weight: bold;
+            background-color: white;
+            color: darkslateblue;
+            margin: 20px auto;
+            border-radius: 5px;
+            line-height: 1.8rem;
+            padding-left: 15px;
+            padding-right: 15px;
+            border: darkslateblue solid 3px;
+        }
+    }
+}
+
+
+/********************************
+  first_login
+*********************************/
+#first_login,#first_login_check {
+    margin: 20px auto;
+    color: white;
+    padding: 0 3%;
+    text-align: center;
+    
+    input {
+        border: white 1px solid;
+        text-align: right;
+        line-height: 1.5rem;
+        width: 200px;
+        background-color: rgba(255,255,255,0.4);
+        margin: 10px auto;
+        color: darkslateblue;
+    }
+    
+    input.submit_btn {
+        display: block;
+        text-align: center;
+        background-color: white;
+        color: darkslateblue;
+        margin: 20px auto;
+        border-radius: 5px;
+        line-height: 1.8rem;
+        width: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: darkslateblue solid 3px;
+        font-weight: bold;
+    }
+}
+
+#info_wrap {
+    width: 90%;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 auto 20px;
+    color:firebrick;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+p#korede_txt {
+    margin: 10px auto 30px;
+}
+
+#first_login_done {
+    text-align: center;
+    color: white;
+    
+    p{
+        margin: 20px auto;
+    }
+    
+    a {
+        background-color: white;
+        color: darkslateblue;
+        line-height: 1.5rem;
+        padding: 0 10px;
+        line-height: 1.8rem;
+        border-radius: 3px;
+    }
+}
+
+
+/********************************
+  mypage
+*********************************/
+
+.name_area{
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+    color: white;
+    
+    #client_name {
+        font-size: 2rem;
+    }
+    #client_point {
+        
+    }
+}
+
+.status_area{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    
+    #status_text {
+        width: 40%;
+        align-self: center;
+        color: white;
+        padding-left: 10px;
+    }
+    
+    #status_icon {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 0;
+        line-height: 1.5rem;
+        background-color: rgba(255,255,255,0.4);
+        border-radius: 15px;
+        
+        .status_icon_set {
+            display: flex;
+            flex-direction: column;
+            
+            p.status_icon_contents {
+                font-size: .7rem;
+                line-height: 1rem;
+                border-radius: 5px;
+                background-color: rgba(255,255,255,0.4);
+                padding: 2px 6px;
+                text-align: center;
+                margin: 1px;
+            }
+            
+            p.status_icon_contents_highlight {
+                font-size: .7rem;
+                line-height: 1rem;
+                border-radius: 5px;
+                background-color: rgba(255,255,255,0.9);
+                font-weight: bold;
+                padding: 2px 6px;
+                text-align: center;
+                color: goldenrod;
+                margin: 1px;
+            }
+        }
+    }
+}
+
+.weight_area{
+    margin: 20px auto;
+    width: 80%;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    padding: 6px 0;
+    color: white;
+    
+    #target_weight {
+        margin-right: 20px;
+    }
+    
+}
+.contents_area{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    color: white;
+    
+    .contents_wrap {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: rgba(255,255,255,0.4);
+        margin: 5px 0;
+        border-radius: 10px;
+        padding: 1%;
+        
+        .contents_img {
+            width: 20%;
+            align-self: center;
+            text-align: center;
+            padding: 3px;
+            
+            img {
+                width: 70px;
+            }
+        }
+        
+        .contents_text {
+            width: 70%;
+            margin: 3px 5px 0;
+            padding: 5px;
+            
+            .contents_title {
+                font-weight: bold;
+                margin-bottom: 7px;
+            }
+            
+            .contents_sentens {
+                font-size: .8rem;
+            }
+        }
+        
+        .click_area {
+            width: 10%;
+            font-size: 2rem;
+            align-self: center;
+            text-align: center;
+            
+            #blue {color: blue;}
+            #green {color: lawngreen;}
+            #red {color: deeppink;}
+            #yellow {color: gold;}
+        }
+    }
+}
+
+
+/********************************
+  training_timetable
+*********************************/
+#training_timetable_top {
+    margin: 10px auto 20px;
+    text-align: center;
+}
+
+#err_msg {
+    display: block;
+    text-align: center;
+}
+
+.training_wrap {
+    color: white;
+    background-color: rgba(255,255,255,0.4);
+    width: 95%;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 10px;
+    
+    .training_link {
+        display: block;
+        background-color: lightsalmon;
+        width: 50%;
+        border-radius: 5px;
+        text-align: center;
+        margin: 10px auto 0;
+        line-height: 2rem;
+    }
+    
+    .training_datetime {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    .training_name {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    .trainer {
+        font-size: .9rem;
+        margin-bottom: .2rem;
+    }
+    
+    .training_discription {
+        font-size: .9rem;
+    }
+}
+
+.training_wrap:not(:last-child){
+    margin-bottom: 10px;
+}
+
+
+/********************************
+  training_discription
+*********************************/
+#discription_wrap {
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    
+    #training_datetime {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    #training_name {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    #trainer {
+        font-size: .9rem;
+        margin-bottom: .2rem;
+    }
+    
+    #training_discription {
+        font-size: .9rem;
+        margin-bottom: 1rem;
+    }
+    
+    #zoom_start {
+        display: block;
+        padding: 3px 10px;
+        width: 150px;
+        text-align: center;
+        margin-top: 20px;
+        font-size: .7rem;
+        border: 1px solid white;
+        color: darkslateblue;
+        background-color: white;
+        line-height: 1.5rem;
+        border-radius: 8px;
+    }
+}
+
+
+/********************************
+  training_log
+*********************************/
+
+.traininglog_main {
+    color: white;
+    
+    #traininglog_main_title {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+.training_quantity_wrap {
+    width: 70%;
+    margin: 0 auto;
+    margin: 40px auto 40px;
+    background-color: rgba(255,255,255,0.4);
+    padding: 5px 20px;
+    border-radius: 10px;
+    
+    .quantity_contents {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        line-height: 2.5rem;
+    }
+}
+
+#training_graph_area {
+    
+    width: 80%;
+    margin: 0 auto;
+    
+    p#training_graph_area_title {
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    
+    #training_graph {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/********************************
+  body_tissue
+*********************************/
+
+.bodytissue_main {
+    color: white;
+}
+
+#graph_wrap {
+    width: 95%;
+    margin: 0 auto;
+    
+    .weight_log_wrap_title{
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+    
+    >img {
+        width: 100%;
+    }
+}
+
+.weight_log_wrap {
+    width: 95%;
+    margin: 0 auto;
+    
+    #graph_select_icon_wrap {
+        width: 95%;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            display: inline-block;
+            border: white 2px solid;
+            padding: 4px;
+            border-radius: 5px;
+            
+        }
+                    
+        a#current {
+            background-color: white;
+            color: darkslateblue;
+            font-weight: bold;
+            line-height: 1.5rem;
+        }
+    }
+    
+    .weight_log_fillout_area {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(255,255,255,0.4);
+        padding: 5px 20px;
+        border-radius: 10px;
+        margin: 20px 4px 4px;
+        padding: 10px auto;
+        
+        form {
+            text-align: center;
+            
+            > div {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+
+        }
+        
+        input {
+            border-bottom: white 1px solid;
+            height: 1.5rem;
+            margin: 5px;
+        }
+        
+        input#input_date {
+            width: 60%;
+        }
+        
+        input#input_value {
+            width: 40%;
+        }
+
+        input.submit {
+            background-color: white;
+            border-radius: 10px;
+            color: darkslateblue;
+            font-weight: bold;
+            width: 30%;
+            height: 2rem;
+            text-align: center;
+            margin: 10px auto;
+        }
+        
+    }
+}
+
+
+/********************************
+  weight_add_check
+*********************************/
+#weight_add_check {
+    color: white;
+    text-align: center;
+    
+    form > div {
+        margin: 10px auto;
+    }
+    
+    > p {
+        margin-top: 30px;
+    }
+    
+    .weight_add_btn {
+        background-color: white;
+        border-radius: 10px;
+        color: darkslateblue;
+        font-weight: bold;
+        width: 100px;
+        height: 1.5rem;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+
+/********************************
+  weight_add_done
+*********************************/
+#weight_add_done {
+    color: white;
+    text-align: center;
+    
+    > p{
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    #weight_add_donetohome {
+        display: block;
+        background-color: white;
+        border-radius: 10px;
+        color: darkslateblue;
+        font-weight: bold;
+        width: 100px;
+        line-height: 1.5rem;
+        margin: 10px auto;
+    }
+    
+}
+
+/********************************
+  setting
+*********************************/
+
+#client_status_wrap {
+    width: 70%;
+    margin: 0 auto 20px;
+    color: white;
+    
+    #client_status_title {
+        text-align: center;
+        margin: 30px auto 20px;
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+    
+    .status_content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        border-bottom: white 1px solid;
+        margin-bottom: 15px;
+        padding: 0 10px;
+
+        p.status_title {
+            margin-right: 5px;
+        }
+    }
+    
+}
+
+a#client_status_btn {
+    display: block;
+    width: 100px;
+    line-height: 2rem;
+    background-color: white;
+    color: darkslateblue;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px auto;
+    border-radius: 10px;
+}
+
+/********************************
+  setting_edit
+*********************************/
+.status_content_edit {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 15px;
+    padding: 0 10px;
+
+    p.status_title {
+        margin-right: 5px;
+    }
+    
+    input {
+        border: white 1px solid;
+        text-align: right;
+        line-height: 1.5rem;
+        width: 200px;
+    }
+}
+
+input#client_status_submit_btn {
+    display: block;
+    width: 100px;
+    line-height: 2rem;
+    background-color: white;
+    color: darkslateblue;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px auto;
+    border-radius: 10px;
+}
+
+
+/********************************
+  setting_edit_done
+*********************************/
+
+p#client_status_info {
+    color: white;
+    text-align: center;
+    margin: 30px auto 20px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+/********************************
+  staff_kanri
+*********************************/
+#staff_kanri_main {
+    .kanri_main_btn {
+        display: block;
+        width: 90%;
+        max-width: 400px;
+        line-height: 4rem;
+        background-color: white;
+        color: darkslateblue;
+        font-weight: bold;
+        text-align: center;
+        margin: 40px auto;
+        border-radius: 10px;
+    }
+}
+
+/********************************
+  client_top
+*********************************/
+#client_top {
+    color: white;
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+    
+    input {
+        border: white 1px solid;
+        text-align: right;
+        line-height: 1.5rem;
+        width: 100px;
+        margin-left: 5px;
+    }
+    
+    input#submit_btn {
+        display: block;
+        width: 100px;
+        line-height: 2rem;
+        background-color: white;
+        color: darkslateblue;
+        font-weight: bold;
+        text-align: center;
+        margin: 10px auto;
+        border-radius: 10px;
+    }
+}
+
+#client_all_disp {
+    color: white;
+    width: 400px;
+    margin: 0 auto;
+    
+    .client_card {
+        background-color: rgba(255,255,255,0.4);
+        border-radius: 5px;
+        line-height: 2rem;
+        padding-left: 10px;
+        margin: 10px auto;
+        
+        input.client_all_submit_btn {
+            background-color: white;
+            color: darkslateblue;
+            padding: 0 10px;
+            margin: 5px auto;
+            border-radius: 5px;
+            line-height: 1.5rem;
+            
+        }
+    }
+    
+}
+
+/********************************
+  client_disp
+*********************************/
+#client_disp_btn_wrap {
+    text-align: center;
+    
+    .client_status_submit_btn {
+        display: inline-block;
+        line-height: 2rem;
+        background-color: white;
+        color: darkslateblue;
+        font-weight: bold;
+        text-align: center;
+        margin: 10px auto;
+        border-radius: 10px;
+        padding: 0 20px;
+    }
+}
+
+
+/********************************
+  training_top
+*********************************/
+#training_top {
+    color: white;
+    
+    > a {
+        display: block;
+        width: 250px;
+        line-height: 2rem;
+        text-align: center;
+        background-color: white;
+        color: darkslateblue;
+        margin: 15px auto;
+        border-radius: 5px;
+        font-weight: bold;
+        border: rgba(255,255,255,0.4) solid 2px;
+    }
+    
+    .training_info_wrap {
+        width: 90%;
+        margin: 0 auto;
+        background-color: rgba(0,0,0,0.3);
+        border: rgba(255,255,255,0.4) solid 2px;
+        border-radius: 5px;
+        margin: 10px auto;
+        padding: 10px;
+        
+        > p {
+            line-height: 1.5rem;
+        }
+        
+        .training_info_btn_wrap {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            
+            > a {
+                margin: 1rem 10px 5px;
+                display: block;
+                background-color: rgba(0,0,0,0.3);
+                border: rgba(255,255,255,0.4) solid 2px;
+                border-radius: 5px;
+                padding: 5px 10px;
+            }
+        }   
+    }   
+}
+
+
+/********************************
+  training_add
+*********************************/
+#training_add {
+    margin: 20px auto;
+    color: white;
+    text-align: center;
+    
+    input {
+        border: rgba(255,255,255,0.3) solid 2px;
+        background-color: rgba(0,0,0,0.3);
+        line-height: 1.7rem;
+        margin-bottom: 10px;
+    }
+    
+    input#submit_btn {
+        display: block;
+        margin: 1rem auto 5px;
+        font-weight: bold;
+        background-color: rgba(255,255,255,0.3);
+        border: rgba(255,255,255,0.4) solid 2px;
+        border-radius: 5px;
+        padding: 3px 10px;
+    }
+}
+
+
+/********************************
+  training_add_check
+*********************************/
+#training_add_check {
+    color: white;
+    
+    .training_info_wrap {
+        width: 90%;
+        margin: 0 auto;
+        background-color: rgba(0,0,0,0.3);
+        border: rgba(255,255,255,0.4) solid 2px;
+        border-radius: 5px;
+        margin: 10px auto;
+        padding: 10px;
+        
+        > p {
+            line-height: 1.5rem;
+        }
+        
+    }
+    
+    #kakunin_txt {
+        text-align: center;
+        margin: 20px auto 10px;
+    }
+    
+    .submit_btn_wrap {
+        display: flex;
+        flex-direction: row;
+        
+        .submit_btn {
+            display: block;
+            line-height: 2rem;
+            background-color: white;
+            color: darkslateblue;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px auto;
+            border-radius: 10px;
+            padding: 0 20px;
+        }
+    }
+}
+
+
+/********************************
+  training_add_done
+*********************************/
+#training_add_done {
+    color: white;
+    text-align: center;
+    
+    > p {
+        line-height: 3rem;
+    }
+    
+    > a {
+        display: block;
+        background-color: rgba(255,255,255,0.3);
+        border: rgba(255,255,255,0.4) solid 2px;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin: 10px auto;
+        width: 400px;
+    }
+}

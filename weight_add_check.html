@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>karifit</title>
+</head>
+<body>
+    <div class="mypage_header">
+        <a href="mypage.php"><img id="back_home" src="img/home_icon.png"> homeへ戻る</a>
+        <a href="mysetting.php"><img id="back_home" src="img/setting_icon.png"> 設定</a>
+    </div>
+    
+    <div id="weight_add_check">
+        <form method="post" action="weight_add_done.php">
+            <div>
+                <p>2020-05-30</p>
+                <input type="hidden" name="wh_date">
+            </div>
+            <div>
+                <p>体重</p>
+                <p>56.8kg</p>
+                <input type="hidden" name="weight">
+            </div>
+            <p>登録してもよろしいですか？</p>
+            <input class = "weight_add_btn" type="submit" value="OK">
+            <input class = "weight_add_btn" type="button" onclick="history.back()" value="戻る">
+        </form>
+    </div>
+    
+    
+    <div class="mypage_footer">
+    <p>Copyright DoDoPepOnline</p>
+</div>
+</body>
+</html>
